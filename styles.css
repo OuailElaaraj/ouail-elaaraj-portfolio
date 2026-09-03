@@ -1,0 +1,84 @@
+:root{
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color:#17181c;background:#fff;font-synthesis:none;text-rendering:optimizeLegibility;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff}
+button,a{font:inherit}
+button{cursor:pointer}
+.nav{height:82px;display:flex;align-items:center;max-width:1360px;margin:auto;padding:0 42px;gap:30px}
+.logo{border:0;background:transparent;font-family:Georgia,serif;font-weight:800;font-size:22px;padding:0;margin-right:auto}
+.navlinks{display:flex;gap:34px;align-items:center}
+.navlinks button{border:0;background:transparent;color:#626773;font-weight:600;font-size:16px;padding:10px 0}
+.navlinks button.active{color:#1464c0}
+.navCta{border:0;background:#1666bd;color:white;font-weight:700;padding:12px 25px;border-radius:12px;box-shadow:0 3px 8px #1464c033}
+.section{max-width:1360px;margin:auto;padding-left:42px;padding-right:42px}
+.hero{min-height:790px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:60px;padding-top:35px}
+.heroCopy{padding-left:0;max-width:690px}
+.location{color:#4f6d91;font-size:17px;margin-bottom:27px}
+.location:first-letter{color:#1464c0}
+.location span{margin-left:8px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:76px;line-height:.98;margin:0 0 18px;letter-spacing:-2px}
+.hero h2{font-family:Georgia,"Times New Roman",serif;color:#1766bf;font-size:31px;margin:0 0 17px}
+.positioning{font-size:19px;line-height:1.55;letter-spacing:.45px;color:#4d6581;font-weight:500;max-width:620px}
+.rule{height:1px;width:60px;background:#1766bf;margin:29px 0}
+blockquote{border-left:2px solid #1766bf;margin:0;padding:0 0 0 20px;font-family:Georgia,serif;font-style:italic;font-size:26px;line-height:1.4;color:#273344;max-width:650px}
+.intro{font-size:18px;line-height:1.8;color:#58708e;max-width:650px;margin:35px 0 45px}
+.actions{display:flex;gap:15px}
+.primary,.secondary{border-radius:10px;padding:15px 39px;font-weight:700;border:1px solid #dfe3e8}
+.primary{background:#17191d;color:#fff}
+.primary span{font-size:21px;margin-left:18px}
+.secondary{background:#fff;color:#17191d}
+.portraitWrap{position:relative;justify-self:center;width:420px}
+.portraitCard{position:relative;z-index:2;width:400px;height:400px;border:1px solid #e0e3e7;border-radius:20px;overflow:hidden;background:#fafafa;box-shadow:0 10px 30px rgba(25,40,60,.04)}
+.portraitCard img{width:100%;height:100%;object-fit:cover;object-position:center}
+.decor{position:absolute;width:40px;height:40px;border-radius:14px;background:#f1f3f5;border:1px solid #e1e4e8}
+.decorTop{right:0;top:-15px}
+.decorBottom{right:-15px;bottom:-16px;background:#eaf2fc;border-color:#b9d2ed}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e7e9ec;border-bottom:1px solid #e7e9ec;padding-top:45px;padding-bottom:45px}
+.metrics div{text-align:center;border-right:1px solid #e7e9ec}
+.metrics div:last-child{border-right:0}
+.metrics strong{display:block;font-family:Georgia,serif;font-size:34px}
+.metrics span{display:block;color:#697589;margin-top:8px}
+.contentSection{padding-top:120px;padding-bottom:80px;max-width:1120px}
+.eyebrow{color:#1766bf;font-size:13px;font-weight:800;letter-spacing:2px;margin:0 0 15px}
+.contentSection h2,.contactSection h2{font-family:Georgia,serif;font-size:48px;margin:0 0 25px}
+.contentSection>p:not(.eyebrow){color:#60728a;font-size:18px;line-height:1.8;max-width:800px}
+.experienceCard{border:1px solid #e4e7eb;border-radius:18px;padding:34px;background:#fff;box-shadow:0 10px 35px rgba(20,40,70,.05)}
+.experienceHead{display:flex;justify-content:space-between;align-items:start;gap:20px}
+.experienceHead h3{margin:0;font-size:25px}.experienceHead span{color:#6b7787}
+.tag{background:#edf5ff;color:#1766bf;padding:8px 12px;border-radius:99px;font-size:12px;font-weight:800}
+.experienceCard li{margin:13px 0;color:#5f7086;line-height:1.6}
+.grid,.learningGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.learningGrid{grid-template-columns:repeat(4,1fr)}
+.card{border:1px solid #e4e7eb;border-radius:16px;padding:25px;min-height:150px}
+.card h3{margin:0 0 12px;font-size:19px}.card p{color:#68778a;line-height:1.6;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1px solid #e0e5ea;border-radius:99px;padding:10px 14px;color:#53657b;background:#fafbfc}
+.contactSection{max-width:1120px;padding-top:100px;padding-bottom:120px;display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.contactSection>div>p:not(.eyebrow){color:#65768b;line-height:1.7}
+.contactLinks{display:flex;flex-direction:column;gap:12px;margin-top:30px}
+.contactLinks a,footer a{color:#1766bf;text-decoration:none;font-weight:600}
+form{display:flex;flex-direction:column;gap:13px}
+input,textarea{border:1px solid #dfe3e8;border-radius:10px;padding:14px 15px;outline:none}
+input:focus,textarea:focus{border-color:#1766bf}
+form .primary{align-self:flex-start}
+footer{border-top:1px solid #e7e9ec;padding:35px 42px;max-width:1360px;margin:auto;display:grid;grid-template-columns:1fr auto;gap:8px}
+footer div:first-child{display:flex;flex-direction:column;gap:6px}
+footer span,footer small{color:#748094}
+footer small{grid-column:1/-1}
+.footerLinks{display:flex;gap:20px}
+@media(max-width:900px){
+  .nav{padding:0 22px}.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:60px;padding-bottom:70px}.heroCopy{max-width:none}
+  .portraitWrap{margin-top:20px}.metrics{grid-template-columns:repeat(2,1fr);gap:30px}.metrics div:nth-child(2){border-right:0}
+  .grid{grid-template-columns:1fr 1fr}.learningGrid{grid-template-columns:1fr 1fr}.contactSection{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .section{padding-left:22px;padding-right:22px}.navCta{padding:10px 14px}.nav{height:70px}
+  h1{font-size:53px}.hero h2{font-size:25px}.positioning{font-size:15px}blockquote{font-size:21px}.intro{font-size:16px}
+  .actions{flex-direction:column}.actions button{width:100%}.portraitWrap{width:100%}.portraitCard{width:100%;height:auto;aspect-ratio:1/1}
+  .metrics{grid-template-columns:1fr}.metrics div{border-right:0;border-bottom:1px solid #e7e9ec;padding-bottom:22px}.metrics div:last-child{border-bottom:0}
+  .contentSection h2,.contactSection h2{font-size:37px}.grid,.learningGrid{grid-template-columns:1fr}
+  .experienceHead{flex-direction:column}footer{padding:30px 22px;grid-template-columns:1fr}.footerLinks{margin-top:10px}
+}
